@@ -59,7 +59,9 @@ label {
 }
 
 body {
-  background: #fafafa;
+  /* background:none; */
+  background-image: url("/asset/cv-builder-online.png");
+  background-position: center;
 }
 
 .container {
@@ -117,7 +119,7 @@ body {
   border-radius: 50%;
   overflow: hidden;
   margin: 1rem auto 2rem;
-  border: 10px solid rgba(236, 236, 236, 0.808);
+  border: 2px solid rgba(84, 81, 81, 0.571);
 }
 
 .top .imgDiv:hover #imgBtn {

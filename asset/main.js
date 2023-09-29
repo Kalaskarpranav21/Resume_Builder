@@ -309,6 +309,7 @@ let collegeCert = document.createElement('div')
 collegeCert.classList.add('colCert')
 collegeCert.innerHTML = `<h3 class="titles">EDUCATION</h3><h4 class="cerficate">${certificate}</h4>
 <p class="college">${collegeName}</p>`
+// Add Certificate and issuer
 
 //  a new div to enter college start and end dates 
 let collegeDates = document.createElement('div')

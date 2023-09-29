@@ -12,17 +12,17 @@ const jobMessage = document.getElementById('jobMessage')
 const ColMessage = document.getElementById('ColMessage')
 const desc = document.getElementById('desc')
 const skill = document.getElementById('skill')
-const topSection = document.getElementById('ResumeTop')
-const experienceSection = document.querySelector('.ResumeExperienceDiv')
-const ResumeProfileSection = document.querySelector('.ResumeProfileSection')
-const ResumeContainer = document.querySelector('.ResumeContainer')
+const topSection = document.getElementById('resumeTop')
+const experienceSection = document.querySelector('.resumeExperienceDiv')
+const resumeProfileSection = document.querySelector('.resumeProfileSection')
+const resumeContainer = document.querySelector('.resumeContainer')
 const mainButton = document.getElementById('previewBtn')
 const newExperienceDiv = document.getElementById('newExp') 
 const experienceBtn = document.getElementById('addCompBtn')
 
-let ResumeCont = document.getElementById('ResumeContainer')
+let resumeCont = document.getElementById('resumeContainer')
 let downloadBtn = document.getElementById('downloadBtn')
-downloadBtn.onclick = (e) => html2pdf(ResumeCont)
+downloadBtn.onclick = (e) => html2pdf(resumeCont)
 
 
 
@@ -156,7 +156,7 @@ function canWeSubmitForm(e) {
 
 function submitForm(btn){
   
-  ResumeContainer.style.display = 'block'
+  resumeContainer.style.display = 'block'
   downloadBtn.style.display = 'block'
   mainButton.style.display = 'none'
     // personalDetails Declaration
@@ -208,26 +208,26 @@ function submitForm(btn){
 // TOP SECTION DIVISIONS --------------------------
 //Creating new div element for image.   
 let imageDiv = document.createElement('div')
-imageDiv.classList.add('ResumeTopDiv')
+imageDiv.classList.add('resumeTopDiv')
 imageDiv.innerHTML = `<img src="${pImage}">`
 //Divison that contains both the name and title. 
 let pNameTitle = document.createElement('div')
-pNameTitle.classList.add('ResumeNameDiv')
+pNameTitle.classList.add('resumeNameDiv')
 // Craeting name division element
 let pNameEntered = document.createElement('div')
-pNameEntered.classList.add('ResumeName')
+pNameEntered.classList.add('resumeName')
 pNameEntered.innerHTML = `<h2>${pName}</h2>`
 pNameTitle.appendChild(pNameEntered)
 
 // Creating title divsion element
 let pTitleEntered = document.createElement('div')
-pTitleEntered.classList.add('ResumeProff')
+pTitleEntered.classList.add('resumeProff')
 pTitleEntered.innerHTML = `<p>${pTitle}</p>`
 pNameTitle.appendChild(pTitleEntered)
 
 //Creating a new div element to hold phone number, email and website
 let contactDiv = document.createElement('div')
-contactDiv.classList.add('ResumeContactDiv') 
+contactDiv.classList.add('resumeContactDiv') 
 
 // Creating anew div element for tel Number
 let telNumber = document.createElement('div')
@@ -309,7 +309,6 @@ let collegeCert = document.createElement('div')
 collegeCert.classList.add('colCert')
 collegeCert.innerHTML = `<h3 class="titles">EDUCATION</h3><h4 class="cerficate">${certificate}</h4>
 <p class="college">${collegeName}</p>`
-// Add Certificate and issuer
 
 //  a new div to enter college start and end dates 
 let collegeDates = document.createElement('div')
@@ -330,10 +329,10 @@ ${pSkill}</div>
 ${pHobby}
 </div>`
 
-ResumeProfileSection.appendChild(pSummary)
-ResumeProfileSection.appendChild(collegeCert)
-ResumeProfileSection.appendChild(collegeDates)
-ResumeProfileSection.appendChild(skillHobby)
+resumeProfileSection.appendChild(pSummary)
+resumeProfileSection.appendChild(collegeCert)
+resumeProfileSection.appendChild(collegeDates)
+resumeProfileSection.appendChild(skillHobby)
 };
  
 

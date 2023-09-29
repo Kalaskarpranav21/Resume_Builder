@@ -417,14 +417,14 @@ body {
   color: red;
 }
 
-.ResumeContainer {
+.resumeContainer {
   margin-top: 2rem;
   background-color: rgba(204, 204, 204, 0.157);
   display: none;
   color: #0a346b;
 }
 
-.ResumeContainer .titles {
+.resumeContainer .titles {
   margin-bottom: 1rem;
   position: relative;
   width: -webkit-max-content;
@@ -432,7 +432,7 @@ body {
   width: max-content;
 }
 
-.ResumeContainer .titles::after {
+.resumeContainer .titles::after {
   content: "";
   position: absolute;
   background-color: #8f8f8f;
@@ -443,7 +443,7 @@ body {
 }
 
 @media screen and (min-width: 960px) {
-  .ResumeContainer .ResumeTop {
+  .resumeContainer .resumeTop {
     display: -ms-grid;
     display: grid;
     -webkit-box-align: center;
@@ -454,41 +454,41 @@ body {
   }
 }
 
-.ResumeContainer .ResumeTop .ResumeTopDiv {
+.resumeContainer .resumeTop .resumeTopDiv {
   width: 100%;
   max-width: 200px;
   height: 200px;
   background-color: antiquewhite;
 }
 
-.ResumeContainer .ResumeTop .ResumeTopDiv img {
+.resumeContainer .resumeTop .resumeTopDiv img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
-.ResumeContainer .ResumeTop .ResumeNameDiv {
+.resumeContainer .resumeTop .resumeNameDiv {
   margin: 1rem 0;
 }
 
 @media screen and (min-width: 960px) {
-  .ResumeContainer .ResumeTop .ResumeNameDiv {
+  .resumeContainer .resumeTop .resumeNameDiv {
     font-size: 24px;
   }
 }
 
-.ResumeContainer .ResumeTop .ResumeNameDiv .ResumeProff p {
+.resumeContainer .resumeTop .resumeNameDiv .resumeProff p {
   font-size: 25px;
 }
 
 @media screen and (min-width: 960px) {
-  .ResumeContainer .ResumeTop .ResumeNameDiv .ResumeProff p {
+  .resumeContainer .resumeTop .resumeNameDiv .resumeProff p {
     font-size: 30px;
   }
 }
 
-.ResumeContainer .ResumeTop .ResumeContactDiv div {
+.resumeContainer .resumeTop .resumeContactDiv div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -498,34 +498,34 @@ body {
   gap: 10px;
 }
 
-.ResumeContainer .ResumeTop .ResumeContactDiv div p {
+.resumeContainer .resumeTop .resumeContactDiv div p {
   font-size: 18px;
 }
 
 @media screen and (min-width: 960px) {
-  .ResumeContainer .ResumeTop .ResumeContactDiv div p {
+  .resumeContainer .resumeTop .resumeContactDiv div p {
     line-height: 2rem;
     font-size: 20px;
   }
 }
 
-.ResumeContainer .ResumeExperienceDiv {
+.resumeContainer .resumeExperienceDiv {
   padding: 10px;
 }
 
-.ResumeContainer .ResumeExperienceDiv .companyDetails {
+.resumeContainer .resumeExperienceDiv .companyDetails {
   margin-bottom: 0.6rem;
 }
 
-.ResumeContainer .ResumeExperienceDiv .companyDetails div p {
+.resumeContainer .resumeExperienceDiv .companyDetails div p {
   font-size: 18px;
 }
 
-.ResumeContainer .ResumeExperienceDiv .companyDetails .companyName {
+.resumeContainer .resumeExperienceDiv .companyDetails .companyName {
   font-weight: 500;
 }
 
-.ResumeContainer .ResumeExperienceDiv .dates {
+.resumeContainer .resumeExperienceDiv .dates {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -536,7 +536,7 @@ body {
   gap: 1rem;
 }
 
-.ResumeContainer .ResumeExperienceDiv .dates::after {
+.resumeContainer .resumeExperienceDiv .dates::after {
   content: "";
   height: 3px;
   width: 6px;
@@ -548,35 +548,35 @@ body {
           transform: translateX(-2.5px);
 }
 
-.ResumeContainer .ResumeExperienceDiv .dates div {
+.resumeContainer .resumeExperienceDiv .dates div {
   padding: 8px;
   background-color: var(--primaryColor);
   color: var(--secondaryColor);
   font-size: 15px;
 }
 
-.ResumeContainer .ResumeExperienceDiv .jobDesc {
+.resumeContainer .resumeExperienceDiv .jobDesc {
   max-width: 100%;
   margin-top: 0.5rem;
   opacity: 0.9;
 }
 
-.ResumeContainer .ResumeProfileSection {
+.resumeContainer .resumeProfileSection {
   background-color: rgba(185, 184, 184, 0.157);
   padding: 10px;
 }
 
-.ResumeContainer .ResumeProfileSection .pSummary p {
+.resumeContainer .resumeProfileSection .pSummary p {
   max-width: 100%;
   margin-bottom: 1rem;
   opacity: 0.9;
 }
 
-.ResumeContainer .ResumeProfileSection .colCert h4 + p {
+.resumeContainer .resumeProfileSection .colCert h4 + p {
   margin-bottom: 10px;
 }
 
-.ResumeContainer .ResumeProfileSection .collegeDatesDiv {
+.resumeContainer .resumeProfileSection .collegeDatesDiv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -588,7 +588,7 @@ body {
   width: max-content;
 }
 
-.ResumeContainer .ResumeProfileSection .collegeDatesDiv::after {
+.resumeContainer .resumeProfileSection .collegeDatesDiv::after {
   content: "";
   height: 3px;
   width: 6px;
@@ -600,15 +600,15 @@ body {
           transform: translateX(-2.5px);
 }
 
-.ResumeContainer .ResumeProfileSection .collegeDatesDiv div {
+.resumeContainer .resumeProfileSection .collegeDatesDiv div {
   padding: 8px;
   background-color: var(--primaryColor);
   color: var(--secondaryColor);
   font-size: 15px;
 }
 
-.ResumeContainer .ResumeProfileSection .skillHobbyDiv,
-.ResumeContainer .ResumeProfileSection .personSkills {
+.resumeContainer .resumeProfileSection .skillHobbyDiv,
+.resumeContainer .resumeProfileSection .personSkills {
   margin-bottom: 2rem;
 }
 

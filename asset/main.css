@@ -59,8 +59,8 @@ label {
 }
 
 body {
-  /* background:none; */
-  background-image: url("/asset/cv-builder-online.png");
+  background:none;
+  background-image: url("./asset/cv-builder-online.png");
   background-position: center;
 }
 
